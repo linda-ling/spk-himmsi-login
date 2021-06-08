@@ -8,7 +8,7 @@
                 <div class="card-header text-md-center">{{ __('Login Admin') }}</div>
 
                 <div class="card-body p-5">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('postlogin') }}">
                         @csrf
                         <div class="form-group mb-3">
                                 <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" placeholder="Username" value="{{ old('username') }}" required autocomplete="username" autofocus>
