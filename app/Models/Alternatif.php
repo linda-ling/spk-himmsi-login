@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Alternatif extends Model
 {
     use HasFactory;
+    protected $table = 'alternatifs';
     protected $primaryKey = 'id_alternatif';
+    protected $fillable = ['nama_calon', 'nim', 'kelas','alamat','pilihan_sie'];
+
 
     //relasi
     public function nilai (){

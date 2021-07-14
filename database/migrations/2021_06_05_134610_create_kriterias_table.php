@@ -17,7 +17,7 @@ class CreateKriteriasTable extends Migration
             $table->Increments('kd_kriteria');
             $table->string('nama_kriteria', 50);
             $table->string('jenis_kriteria', 20);
-            $table->string('bobot_kriteria', 10);
+            $table->float('bobot_kriteria');
             $table->timestamps();
         });
     }

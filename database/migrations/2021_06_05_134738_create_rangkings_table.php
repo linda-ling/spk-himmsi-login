@@ -14,7 +14,7 @@ class CreateRangkingsTable extends Migration
     public function up()
     {
         Schema::create('rangkings', function (Blueprint $table) {
-            $table->Increments('kd_hasil', 5);
+            $table->Increments('kd_hasil');
             $table->integer('total');
             $table->integer('hasil_akhir');
             $table->timestamps();

@@ -14,9 +14,9 @@ class CreateParametersTable extends Migration
     public function up()
     {
         Schema::create('parameters', function (Blueprint $table) {
-             $table->Increments('kd_parameter', 5);
+             $table->Increments('kd_parameter');
             $table->string('nama_parameter', 50);
-            $table->string('nilai_parameter', 5);
+            $table->float('nilai_parameter');
             $table->timestamps();
         });
     }
